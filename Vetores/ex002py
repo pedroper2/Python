@@ -1,0 +1,27 @@
+import os
+import sys
+os.system ("clear || cls")
+QUANTIDADE_NUMEROS = 3
+MaiorNota= 0
+MenorNotar=sys.maxsize
+soma= 0 
+media= 0
+notas =[]
+
+for i in range (QUANTIDADE_NUMEROS):
+    Numero= int (input ("Numero: "))
+    soma+= Numero
+    notas.append (Numero)
+    
+    MaiorNota= max (Numero,MaiorNota)
+    MenorNotar= min (Numero,MenorNotar)
+
+for i,Numero in enumerate (notas) :
+        print(f"{i+1}º Numero: {Numero}")
+
+media = sum (notas) / QUANTIDADE_NUMEROS
+print (f"Media: {media}")
+print (f"Menornumero: {MenorNotar}")
+print (f"Maior numero: {MaiorNota}")
+
+
