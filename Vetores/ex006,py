@@ -1,0 +1,24 @@
+import os
+import sys
+
+os.system ("cls || clear")
+numeros= []
+soma= 0
+media= 0
+maior = 0
+menor= sys.maxsize
+for i in range (3):
+    numero= float (input (f"Digite o {i+1} numero: "))
+    numeros.append(numero)
+    soma+= numero
+for c in range (3):
+    print (f"O {c + 1} Numero: {numeros[c]}")
+
+media = soma / 3
+print (f"A Media do é: {media}")
+if media >= 7:
+    print ("APROVADO")
+if media >= 5:
+    print ("RECUPERAÇÂO")
+if media < 5: 
+    print ("REPROVADO")
