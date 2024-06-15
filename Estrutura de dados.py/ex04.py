@@ -39,6 +39,7 @@ while True:
     variaveis.append(variavel)
     cab()
     for i in variaveis:
+        print(f"Usuario: {i+1}")
         print (f"nome: {i.nome}")
         print (f"peso: {i.peso}")
         print (f"altura: {i.altura}")
