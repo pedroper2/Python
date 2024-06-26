@@ -3,6 +3,7 @@ os.system ("clear || cls")
 QUANTIDADE_NOTAS = 3
 notas = []
 soma=0;media=0
+3
 
 for i in range (QUANTIDADE_NOTAS):
     nota = int (input (f"Digite a nota: "))
